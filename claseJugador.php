@@ -28,10 +28,10 @@ class TipoJugador {
     function mostrarSkills(){
 
         echo "Las estaditicas del jugador son: <br>";
-        echo "El nombre del jugador es: ".$this->nombre."<br>";
-        echo "El ataque es de: ".$this->ataque."<br>";
-        echo "La defensa es de: ".$this->defensa."<br>";
-        echo "La salud es de: ".$this->salud."<br>";
+        echo "Nombre: ".$this->nombre."<br>";
+        echo "Ataque: ".$this->ataque."<br>";
+        echo "Defensa: ".$this->defensa."<br>";
+        echo "Salude: ".$this->salud."<br>";
         
     }
 
