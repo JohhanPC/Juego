@@ -18,14 +18,10 @@ class TipoJugador {
         echo "Daño recibido";
     }
 
-    function saludRstante(){
-        echo "El ataque afecto la salud";
-    }
-
     function __construct()
     {
         $this->ataque = random_int(6,9);
-        $this->defensa = random_int(2, 5);
+        $this->defensa = random_int(3, 5);
         $this->salud = random_int(14,20);
     }
 
@@ -41,7 +37,7 @@ class TipoJugador {
 
     function actualizarSalud(int $dañoBatalla, $jugador){
         $this->salud = $this->salud - $dañoBatalla;
-        echo "La salud de ".$jugador->nombre." es de ".$jugador->salud."<br>";
+        echo "La salud de ".$jugador->nombre." ahora es de ".$jugador->salud."<br>";
     
     }
 
